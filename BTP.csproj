@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2306ECE8-37E0-41F9-A53F-4B13DB7B8B89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTP</RootNamespace>
+    <AssemblyName>BTP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImageComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ImageComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL, Version=3.1.1.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <HintPath>packages\SharpGL.3.1.1\lib\net472\SharpGL.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.SceneGraph, Version=3.1.1.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <HintPath>packages\SharpGL.SceneGraph.3.1.1\lib\net472\SharpGL.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WinForms, Version=3.1.1.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <HintPath>packages\SharpGL.WinForms.3.1.1\lib\net472\SharpGL.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.4.7.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddObjectDialogWithResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddObjectDialogWithResult.Designer.cs">
+      <DependentUpon>AddObjectDialogWithResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddObjectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddObjectDialog.Designer.cs">
+      <DependentUpon>AddObjectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayDialog.Designer.cs">
+      <DependentUpon>DisplayDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloorParameterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloorParameterDialog.Designer.cs">
+      <DependentUpon>FloorParameterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowParameters.Designer.cs">
+      <DependentUpon>WindowParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialBaseDialog.Designer.cs">
+      <DependentUpon>MaterialBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardMaterial.Designer.cs">
+      <DependentUpon>StandardMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelParameterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelParameterDialog.Designer.cs">
+      <DependentUpon>LevelParameterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridDialog.Designer.cs">
+      <DependentUpon>GridDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSectionDialog.Designer.cs">
+      <DependentUpon>StandardSectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SectionBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionBaseDialog.Designer.cs">
+      <DependentUpon>SectionBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddObjectDialog.resx">
+      <DependentUpon>AddObjectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddObjectDialogWithResult.resx">
+      <DependentUpon>AddObjectDialogWithResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayDialog.resx">
+      <DependentUpon>DisplayDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloorParameterDialog.resx">
+      <DependentUpon>FloorParameterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialBaseDialog.resx">
+      <DependentUpon>MaterialBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardMaterial.resx">
+      <DependentUpon>StandardMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelParameterDialog.resx">
+      <DependentUpon>LevelParameterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridDialog.resx">
+      <DependentUpon>GridDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSectionDialog.resx">
+      <DependentUpon>StandardSectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionBaseDialog.resx">
+      <DependentUpon>SectionBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowParameters.resx">
+      <DependentUpon>WindowParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downward_arrow_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up_2_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color_wheel_2_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectBH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sr5050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st70701.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f100115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\od100100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\es10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t2040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\none.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uplus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uplus1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uplus2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uminus.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Crate.bmp" />
+    <None Include="Resources\brushedsteel.jpg" />
+    <None Include="Resources\pine1.jpg" />
+    <None Include="Resources\Crate.bmp" />
+    <Content Include="SharpGL.ico" />
+    <Content Include="SharpGL.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

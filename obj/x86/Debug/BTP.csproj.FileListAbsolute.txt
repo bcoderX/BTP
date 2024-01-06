@@ -1,0 +1,12 @@
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.csproj.AssemblyReference.cache
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.FloorParameterDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.MaterialBaseDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.StandardMaterial.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.LevelParameterDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.GridDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.StandardSectionDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.SectionBaseDialog.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.Properties.Resources.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.WindowParameters.resources
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.csproj.GenerateResource.cache
+C:\Users\vboxuser\Desktop\BTP\obj\x86\Debug\BTP.csproj.CoreCompileInputs.cache
